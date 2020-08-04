@@ -20,7 +20,7 @@ import com.udemy.aopdemo.Account;
 public class MyDemoLoggingAspect {
 	
 	@After("execution(* com.udemy.aopdemo.dao.AccountDAO.findAccounts(..))")
-	public void afterFinallyFindAccountAdvice(JoinPoint theJoinPoint) {
+	public void afterFinallyFindAccountsAdvice(JoinPoint theJoinPoint) {
 		
 		// print out which method we are advising on
 		String method = theJoinPoint.getSignature().toShortString();
